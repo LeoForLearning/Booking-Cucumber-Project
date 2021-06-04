@@ -1,5 +1,7 @@
 # Booking-Cucumber-Project
 
+I have selected "blazedemo - Travel Agency" project
+
 Cucumber based framework is used 
 
 Model - Page object
