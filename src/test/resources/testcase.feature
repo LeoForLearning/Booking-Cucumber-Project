@@ -19,4 +19,3 @@ Feature: Validate user is able to book a flight in the production
       | Boston       | Rome        |
       | Paris        | London      |
       | Mexico City  | Dublin      |
-    

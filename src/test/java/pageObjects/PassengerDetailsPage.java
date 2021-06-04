@@ -82,14 +82,19 @@ public class PassengerDetailsPage extends Reusables {
 			int rand = (int) (Math.random() * ((cardNumberList.length - 1) - 0) + 0);
 			cardNumber = cardNumberList[rand];
 		}
-		
+
 		iType(creditCardNumber, cardNumber);
 		iType(creditCardMonth, cardMonth);
-
 		iType(creditCardYear, cardYear);
-
 		iType(CreditCardName, cardName);
 
 	}
+	
+	public void clickPurchaseNow()  {
+		ImplicitlyWait(5);
+		Click(purchaseFlight);
+	}
+
+	
 
 }

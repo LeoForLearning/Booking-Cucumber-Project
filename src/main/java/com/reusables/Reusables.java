@@ -21,8 +21,6 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Reusables {
 
 	public static RemoteWebDriver driver;
-	// WebDriver driver;
-
 	private static JavascriptExecutor jse = null;
 
 	public void EnterURL(String applicationUrl) {
@@ -133,7 +131,7 @@ public class Reusables {
 		}
 	}
 
-	public String iGetCurrentURL() {
+	public String GetCurrentURL() {
 		String currentURL = "";
 		try {
 			currentURL = driver.getCurrentUrl();
@@ -143,10 +141,10 @@ public class Reusables {
 		return currentURL;
 	}
 	
-	  public boolean iVerifyCurrentURL(String expectedTitle) {
+	  public boolean VerifyCurrentURL(String expectedTitle) {
 	        boolean bReturn = false;
 	        try {
-	            if (iGetCurrentURL().contains(expectedTitle)) {
+	            if (GetCurrentURL().contains(expectedTitle)) {
 	                bReturn = true;
 	            } else {
 	                System.out.println("i failed to verify current url of the element: " + expectedTitle);

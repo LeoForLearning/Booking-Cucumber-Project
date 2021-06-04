@@ -19,12 +19,12 @@ public class ConfirmationPage extends Reusables{
 
 	public void validatePurchaseText(String text) {
 
-		iVerifyCurrentURL(text);
+		VerifyCurrentURL(text);
 	}
 	
 	public void validateConfirmationID(String text) {
 
-		iVerifyCurrentURL(text);
+		VerifyCurrentURL(text);
 	}
 	
 }
